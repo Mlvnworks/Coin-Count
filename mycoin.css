@@ -1,0 +1,27 @@
+/* Showcase area */
+#showcase1{
+    border-top:2px gray solid;
+}
+/* Main body */
+.inner-sec{
+    margin-left: 10px ;
+    margin-right: 10px ;
+}
+/* Footer */
+footer li{
+    list-style: none;
+    margin:auto 10px;
+}
+#main-footer{
+    margin-top: 160px;
+}
+/* Opening Modal */
+#opening{
+    display: block;
+}
+/* Mobile View */
+@media(max-width:768px){
+    .inner-sec{
+        margin:25px 0;
+    }
+}
