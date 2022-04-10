@@ -8,5 +8,5 @@ Tools used:
 3)css
 4)javaScript
 
-##view Coin Count Website here:
-#https://coincountph.000webhostapp.com/
+## view Coin Count Website here:
+https://mlvnworks.github.io/Coin-Count/mycoin.html
