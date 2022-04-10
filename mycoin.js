@@ -86,7 +86,7 @@ function dayCount(){
     if(hide == 'false'){
         setInterval(()=>{
             cDay += 1;
-            localStorage.setItem('day',cDay);
+            localStorage.setItem('day','un-avaible');
         },1000*60*60*24)
     }
 }

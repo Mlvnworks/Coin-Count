@@ -1,3 +1,10 @@
+/*btn container*/
+#full-his-toggle{
+    display: none;   
+}
+#full-his-toggle:hover{
+    color:white;
+}
 /* Showcase area */
 #showcase1{
     border-top:2px gray solid;
