@@ -4,34 +4,37 @@ const hstryLst=document.querySelector('#h-list');
 const btnMdl=document.querySelector('#modal-btn');
 
 btnMdl.addEventListener('click',()=>{
-    if(btnMdl.textContent == 'ADD'){
-        const amnt=document.querySelector('#value').value;
-        const remark=document.querySelector('#remark').value;
-        const dt=new Date();
-        if(remark === ''){
-            history.unshift({amount:`+${amnt}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:`not set`});
-            
-            localStorage.setItem('history',JSON.stringify(history));
-        }else{
-            history.unshift({amount:`+${amnt}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:remark})
+    const amnt=document.querySelector('#value');
+    if(amnt.value === ""){
         
-            localStorage.setItem('history',JSON.stringify(history));
-        }
-        location.reload();
-    }else if(btnMdl.textContent == 'GET'){
-        const amnt=document.querySelector('#value').value;
-        const remark=document.querySelector('#remark').value;
-        const dt=new Date();
-        if(remark === ''){
-            history.unshift({amount:`-${amnt}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:`not set`});
+    }else{
+        if(btnMdl.textContent == 'ADD'){
+            const remark=document.querySelector('#remark').value;
+            const dt=new Date();
+            if(remark === ''){
+                history.unshift({amount:`+${amnt.value}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:`not set`});
+                
+                localStorage.setItem('history',JSON.stringify(history));
+            }else{
+                history.unshift({amount:`+${amnt.value}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:remark})
             
-            localStorage.setItem('history',JSON.stringify(history));
-        }else{
-            history.unshift({amount:`-${amnt}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:remark})
-        
-            localStorage.setItem('history',JSON.stringify(history));
+                localStorage.setItem('history',JSON.stringify(history));
+            }
+            location.reload();
+        }else if(btnMdl.textContent == 'GET'){
+            const remark=document.querySelector('#remark').value;
+            const dt=new Date();
+            if(remark === ''){
+                history.unshift({amount:`-${amnt.value}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:`not set`});
+                
+                localStorage.setItem('history',JSON.stringify(history));
+            }else{
+                history.unshift({amount:`-${amnt.value}`,date:`${dt.getMonth()}-${dt.getDate()}-${dt.getFullYear()}`,remark:remark})
+            
+                localStorage.setItem('history',JSON.stringify(history));
+            }
+            location.reload();
         }
-        location.reload();
     }
 })
 function output(){
