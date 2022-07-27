@@ -9,4 +9,5 @@ Tools used:
 4)javaScript
 
 ## view Coin Count Website here:
-https://mlvnworks.github.io/Coin-Count/
+
+> coincount.mlvnworks.com
