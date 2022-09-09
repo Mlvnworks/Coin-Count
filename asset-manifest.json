@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccebfd6a.css",
-    "main.js": "/static/js/main.c7094ba6.js",
+    "main.css": "/static/css/main.ae4fcf6d.css",
+    "main.js": "/static/js/main.c8b5253a.js",
     "static/media/farmwebtool.png": "/static/media/farmwebtool.1454e1dfd08e19542477.png",
     "static/media/gig baner.jpg": "/static/media/gig baner.ec6c06eec4cf3855f758.jpg",
     "static/media/portfolio-banner.png": "/static/media/portfolio-banner.7720f8f543b817eea0fd.png",
     "index.html": "/index.html",
-    "main.ccebfd6a.css.map": "/static/css/main.ccebfd6a.css.map",
-    "main.c7094ba6.js.map": "/static/js/main.c7094ba6.js.map"
+    "main.ae4fcf6d.css.map": "/static/css/main.ae4fcf6d.css.map",
+    "main.c8b5253a.js.map": "/static/js/main.c8b5253a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccebfd6a.css",
-    "static/js/main.c7094ba6.js"
+    "static/css/main.ae4fcf6d.css",
+    "static/js/main.c8b5253a.js"
   ]
 }
